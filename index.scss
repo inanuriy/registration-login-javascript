@@ -1,0 +1,49 @@
+
+
+
+
+// ==================
+
+.pMargin {
+    text-align: center;
+    font-size: 2.2vw;;
+}
+
+.formShadow {
+    box-shadow: 5px 5px 15px #888888;
+}
+
+// ============= REGISTER
+
+.registerH1 {
+    padding-top: 5vw;
+    text-align: center;
+}
+
+.registerForm {
+    width: 60%;
+    margin: 5vw auto;
+    padding: 4vw ;
+    border-style: solid;
+    border-radius: 3%;
+}
+
+// ============== LOGIN
+
+.loginH1 {
+    padding-top: 5vw;
+    text-align: center;
+}
+.loginForm {
+    width: 60%;
+    margin: 5vw auto;
+    padding: 4vw ;
+    border-style: solid;
+    border-radius: 3%;
+}
+
+// =============== LOGOUT
+
+.logoutButton {
+    float: right;
+}
