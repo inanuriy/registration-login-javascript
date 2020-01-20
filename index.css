@@ -32,11 +32,11 @@
 }
 
 .loginForm {
+  width: 60%;
   margin: 5vw auto;
   padding: 4vw;
   border-style: solid;
   border-radius: 3%;
-  max-width: 500px;
 }
 
 .logoutButton {
