@@ -43,26 +43,26 @@ function registration()
 
 // ================== LOCAL STORAGE
 
-// let registrationData = [];
-// let userData = (event) => {
-//     event.preventDefault();
-//     let data = {
-//         firstName: document.getElementById("firstName").value,
-//         lastName: document.getElementById("lastName").value,
-//         registerEmail: document.getElementById("registerEmail").value,
-//         registerPassword: document.getElementById("registerPassword").value
+let registrationData = [];
+let userData = (event) => {
+    event.preventDefault();
+    let data = {
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        registerEmail: document.getElementById("registerEmail").value,
+        registerPassword: document.getElementById("registerPassword").value
 
-//     }
-//     registrationData.push(data);
+    }
+    registrationData.push(data);
 
-//     localStorage.setItem("userRegistrationData", JSON.stringify(registrationData));
+    localStorage.setItem("userRegistrationData", JSON.stringify(registrationData));
 
-// };
+};
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     document.getElementById('registrationButton').addEventListener('click', userData);
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('registrationButton').addEventListener('click', userData);
 
-// });
+});
 
 
 // =================== LOGIN
