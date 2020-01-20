@@ -55,7 +55,7 @@ let userData = (event) => {
     }
     registrationData.push(data);
 
-    console.warn("Added" ,{registrationData});
+    // console.warn("Added" ,{registrationData});
     // let hello = document.querySelector('#greetings hello');
     // hello.textContent = "Hello " + JSON.stringify(firstName) + "!" ;
     localStorage.setItem("userRegistrationData", JSON.stringify(registrationData));
@@ -64,8 +64,8 @@ let userData = (event) => {
 
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('registrationButton').addEventListener('click', userData);
-});
 
+});
 
 // =================== LOGIN
 
@@ -112,7 +112,7 @@ let loginUserData = (event) => {
     }
     loginData.push(userLoginData);
 
-    console.warn("Added" ,{loginData});
+    // console.warn("Added" ,{loginData});
     localStorage.setItem("usersLoginData", JSON.stringify(loginData));
 
 };
@@ -121,14 +121,13 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('loginButton').addEventListener('click', loginUserData);
 });
 
-// document.getElementById("greetings") = localStorage.getItem(["firstName"]);
-
 
 // =================== HOME
 
 // let userFirstName = document.getElementById("firstName");
 
-let firstName = localStorage.getItem("userRegistrationData", "firstName");
+let firstName = JSON.parse(localStorage.getItem('userRegistrationData'));
+
 document.getElementById("greetings").innerHTML = 'Hello, ' + firstName + '!';
 
 
