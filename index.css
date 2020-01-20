@@ -1,3 +1,8 @@
+.homeH1 {
+  padding-top: 5vw;
+  text-align: center;
+}
+
 .pMargin {
   text-align: center;
   font-size: 2.2vw;
@@ -27,11 +32,11 @@
 }
 
 .loginForm {
-  width: 60%;
   margin: 5vw auto;
   padding: 4vw;
   border-style: solid;
   border-radius: 3%;
+  max-width: 500px;
 }
 
 .logoutButton {

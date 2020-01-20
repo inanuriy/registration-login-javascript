@@ -55,9 +55,6 @@ let userData = (event) => {
     }
     registrationData.push(data);
 
-    // console.warn("Added" ,{registrationData});
-    // let hello = document.querySelector('#greetings hello');
-    // hello.textContent = "Hello " + JSON.stringify(firstName) + "!" ;
     localStorage.setItem("userRegistrationData", JSON.stringify(registrationData));
 
 };
@@ -112,7 +109,6 @@ let loginUserData = (event) => {
     }
     loginData.push(userLoginData);
 
-    // console.warn("Added" ,{loginData});
     localStorage.setItem("usersLoginData", JSON.stringify(loginData));
 
 };
@@ -124,12 +120,8 @@ document.getElementById('loginButton').addEventListener('click', loginUserData);
 
 // =================== HOME
 
-// let userFirstName = document.getElementById("firstName");
 
 let firstName = JSON.parse(localStorage.getItem('userRegistrationData'));
-
-console.log(firstName);
-
 
 document.getElementById("greetings").innerHTML = 'Hello, ' + firstName[0].firstName + '!';
 

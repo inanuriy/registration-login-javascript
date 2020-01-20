@@ -1,4 +1,9 @@
+// ============  HOME
 
+.homeH1 {
+    padding-top: 5vw;
+    text-align: center;
+}
 
 
 
@@ -35,12 +40,13 @@
     text-align: center;
 }
 .loginForm {
-    width: 60%;
     margin: 5vw auto;
-    padding: 4vw ;
+    padding: 4vw;
     border-style: solid;
     border-radius: 3%;
+    max-width: 500px;
 }
+
 
 // =============== LOGOUT
 
