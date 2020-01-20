@@ -128,7 +128,10 @@ document.getElementById('loginButton').addEventListener('click', loginUserData);
 
 let firstName = JSON.parse(localStorage.getItem('userRegistrationData'));
 
-document.getElementById("greetings").innerHTML = 'Hello, ' + firstName + '!';
+console.log(firstName);
+
+
+document.getElementById("greetings").innerHTML = 'Hello, ' + firstName[0].firstName + '!';
 
 
 
